@@ -3,7 +3,7 @@
         <div class="container flex flex-wrap justify-between items-center mx-auto">
             <router-link to="/" class="flex items-center">
                 <img src="../../public/images/Logo-2-cropped.svg" alt="Hackathon Logo" class="h-10 w-auto mr-5">
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">ModelNow</span>
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">MODmatch</span>
             </router-link>
             <div class="flex">
                 <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
