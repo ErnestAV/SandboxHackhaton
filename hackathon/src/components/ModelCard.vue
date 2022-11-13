@@ -1,8 +1,10 @@
 <template>
     <div class="group rounded overflow-hidden shadow-lg">
-        <div class="w-full h-96 w-100" style="background-image: url('./images/model1.jpeg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="flex justify-end w-full h-96 w-100" style="background-image: url('./images/model1.jpeg'); background-repeat: no-repeat; background-size: cover;">
         <!-- <img class="w-full" src="../../public/images/model1.jpeg" alt="model.firstName"> -->
-            <button class="opacity-0 group-hover:opacity-100">Hello</button>
+            <button class="opacity-0 group-hover:opacity-100 bg-white hover:bg-gray-100 rounded-full w-20 h-20 m-1 align"
+                style="background-image: url('./message.jpg'); background-repeat: no-repeat; background-size: cover;">
+            </button>
         </div>
 
 
@@ -32,10 +34,14 @@
 </template>
 
 <script>
+    // import emailjs from '@emailjs/browser';
     export default {
         name: 'ModelCard',
         props: {
             model: {}
         },
+        methods: {
+            // emailjs.sendForm()
+        }
     };
 </script>
