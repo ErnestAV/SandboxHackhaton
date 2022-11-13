@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Discover from '../views/Discover.vue'
+import Discover from '../views/Discover'
 import DiscoverBusinesses from '../views/DiscoverBusinesses'
+import Signup from '../views/auth/signup.vue'
+import Login from '../views/auth/login.vue'
 
 Vue.use(VueRouter)
 
@@ -29,7 +31,17 @@ const routes = [
     path: '/discoverbusinesses',
     name: 'DiscoverBusinesses',
     component: DiscoverBusinesses
-  }
+  },
+  {
+    path: '/signup',
+    name: 'Signup',
+    component: Signup
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  },
 ]
 
 const router = new VueRouter({

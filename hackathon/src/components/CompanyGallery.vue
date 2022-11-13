@@ -1,7 +1,7 @@
 <template>
   <div class="m-20">
     <h1 class="flex justify-center font-bold text-5xl text-center">
-      The #1 platform to connect companies and models
+      Trusted by...
     </h1>
     <div class="flex flex-row space-x-10 my-5 justify-center">
         <div>
