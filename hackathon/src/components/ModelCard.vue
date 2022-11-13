@@ -3,7 +3,7 @@
         <div class="flex justify-end w-full h-96 w-100" style="background-image: url('./images/model1.jpeg'); background-repeat: no-repeat; background-size: cover;">
         <!-- <img class="w-full" src="../../public/images/model1.jpeg" alt="model.firstName"> -->
             <button class="opacity-0 group-hover:opacity-100 bg-white hover:bg-gray-100 rounded-full w-20 h-20 m-1 align"
-                style="background-image: url('./message.jpg'); background-repeat: no-repeat; background-size: cover;">
+                style="background-image: url('./message.jpg'); background-repeat: no-repeat; background-size: cover;" @click="sendEmail">
             </button>
         </div>
 
@@ -34,14 +34,26 @@
 </template>
 
 <script>
-    // import emailjs from '@emailjs/browser';
+    import emailjs from '@emailjs/browser';
     export default {
         name: 'ModelCard',
         props: {
             model: {}
         },
         methods: {
-            // emailjs.sendForm()
+            sendEmail() {
+                emailjs.init('Ix3x0zH-EKTRe6yA1');
+                emailjs.send("service_nucwgok","template_rj5g3px",{
+                to_name: "TJ",
+                from_name: "GQ",
+                to_email: "tjmadmax111@gmail.com",
+                reply_to: "tjmaxwell157@gmail.com",
+                }).then((result) => {
+                    console.log('SUCCESS!', result.text);
+                }, (error) => {
+                    console.log('FAILED...', error.text);
+                });
+            }
         }
     };
 </script>
