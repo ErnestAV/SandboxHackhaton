@@ -1,11 +1,23 @@
 <template>
-    <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
+    <div class="group rounded overflow-hidden shadow-lg">
+        <div class="w-full h-96 w-100" style="background-image: url('./images/model1.jpeg'); background-repeat: no-repeat; background-size: cover;">
+        <!-- <img class="w-full" src="../../public/images/model1.jpeg" alt="model.firstName"> -->
+            <button class="opacity-0 group-hover:opacity-100">Hello</button>
+        </div>
+
+
+
+        <!--MODEL INFO-->
         <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <div class="font-bold text-xl mb-2">Model Name</div>
             <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
+                Age: 23
+            </p>
+            <p class="text-gray-700 text-base">
+                Race: 23
+            </p>
+            <p class="text-gray-700 text-base">
+                Height: 23
             </p>
         </div>
         <div class="px-6 pt-4 pb-2">
@@ -22,5 +34,8 @@
 <script>
     export default {
         name: 'ModelCard',
+        props: {
+            model: {}
+        },
     };
 </script>
