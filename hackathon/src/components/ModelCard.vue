@@ -46,7 +46,7 @@
                 emailjs.send("service_nucwgok","template_rj5g3px",{
                 to_name: this.model.firstName,
                 from_name: "Cotopaxi",
-                to_email: "tjmadmax111@gmail.com",
+                to_email: "ernestovalencia.av@gmail.com",
                 reply_to: "tjmaxwell157@gmail.com",
                 }).then((result) => {
                     console.log('SUCCESS!', result.text);

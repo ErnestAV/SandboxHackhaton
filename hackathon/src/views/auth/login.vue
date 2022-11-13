@@ -26,10 +26,12 @@
                     <input v-model="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
                 </div>
                 
-                <div class="flex items-center justify-between">
-                    <button @click="signIn" class="bg-blue-600 hover:bg-blue-700 rounded-full w-full  text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline" type="button">
+                <div class="flex items-center justify-center">
+                    <router-link to="/discoverbusinesses">
+                        <button class="bg-blue-600 hover:bg-blue-700 rounded-full w-full  text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline" type="button">
                         Log In
-                    </button>
+                        </button>
+                    </router-link>
                 </div>
                 <p class="mt-6 text-center break-words rounded-full italic text-xs">
                     Don't have an account?
