@@ -1,6 +1,6 @@
 <template>
     <div class="group rounded overflow-hidden shadow-lg">
-        <div class="flex justify-end w-full h-96 w-100" style="background-image: url('./images/model1.jpeg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="flex justify-end w-full h-96 w-100" v-bind:style="{'background-image': 'url(' + model.image + ')', 'background-repeat': 'no-repeat', 'background-size': 'cover' }">
         <!-- <img class="w-full" src="../../public/images/model1.jpeg" alt="model.firstName"> -->
             <button class="opacity-0 group-hover:opacity-100 bg-white hover:bg-gray-100 rounded-full w-20 h-20 m-1 align"
                 style="background-image: url('./message.jpg'); background-repeat: no-repeat; background-size: cover;" @click="sendEmail">
@@ -11,15 +11,15 @@
 
         <!--MODEL INFO-->
         <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Model Name</div>
+            <div class="font-bold text-xl mb-2">{{model.firstName}} {{model.lastName}}</div>
             <p class="text-gray-700 text-base">
-                Age: 23
+                Age: {{model.age}}
             </p>
             <p class="text-gray-700 text-base">
-                Race: 23
+                Ethnicity: {{model.ethnicity}}
             </p>
             <p class="text-gray-700 text-base">
-                Height: 23
+                Height: {{model.height}}
             </p>
         </div>
         <div class="px-6 pt-4 pb-2">

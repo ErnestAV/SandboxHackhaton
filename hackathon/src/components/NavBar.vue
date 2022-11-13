@@ -1,8 +1,8 @@
 <template>
-    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 bg-gray-100">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
             <router-link to="/" class="flex items-center">
-                <img src="../../public/images/Logo-2.svg" alt="Hackathon Logo">
+                <img src="../../public/images/Logo-2-cropped.svg" alt="Hackathon Logo" class="h-10 w-auto mr-5">
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">ModelNow</span>
             </router-link>
             <div class="flex">
